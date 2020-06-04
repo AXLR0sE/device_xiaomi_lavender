@@ -34,6 +34,9 @@ $(call inherit-product, vendor/aosp/common.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Ignore path restrictions 
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
+
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
